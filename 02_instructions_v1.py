@@ -35,8 +35,10 @@ def instructions():
 
 question = yes_no("Have you done this quiz before? ")
 
-if question == "No" or "no":
+if question == "no":
     instructions()
+else:
+    print("program continues")
 
 
 
