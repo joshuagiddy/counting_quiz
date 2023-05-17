@@ -1,3 +1,8 @@
+""" Added code to check if the user entered the correct answer, then print whether they were correct or not,
+and increase the score if they were correct
+"""
+
+
 import random
 
 QUESTIONS = [["question 1", "answer 1"],
@@ -10,15 +15,6 @@ QUESTIONS = [["question 1", "answer 1"],
              ["question 8", "answer 8"],
              ["question 9", "answer 9"],
              ["question 10", "answer 10"]]
-
-
-
-
-def introduction():
-    print("welcome message")
-    yes_no()
-
-
 
 
 def yes_no(question_text):
@@ -41,7 +37,11 @@ def yes_no(question_text):
 
 
 def instructions():
-    print("instructions")
+    print("*** How Quiz Works ***")
+    print()
+    print("The instructions of the quiz will go here")
+    print("Program continues")
+    print()
 
 
 def question(questions, score):
@@ -55,19 +55,4 @@ def question(questions, score):
             print("Correct")
         else:
             print("Incorrect")
-    end_quiz(score)
-
-
-def end_quiz(score):
-    print(f"You got {score}/10 questions correct")
-    play_again = input("Would you like to play again? (Y/N) ").upper()
-    if play_again == "Y" or play_again == "YES":
-        question(QUESTIONS, 0)
-    elif play_again == "N" or play_again == "NO":
-        print("Thanks for playing!")
-    else:
-        print("Invalid Input")
-
-introduction()
-
 
