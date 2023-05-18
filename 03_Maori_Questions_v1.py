@@ -5,18 +5,19 @@ then remove that question and answer from the list
 
 import random
 
-QUESTIONS = [["question 1", "answer 1"],
-             ["question 2", "answer 2"],
-             ["question 3", "answer 3"],
-             ["question 4", "answer 4"],
-             ["question 5", "answer 5"],
-             ["question 6", "answer 6"],
-             ["question 7", "answer 7"],
-             ["question 8", "answer 8"],
-             ["question 9", "answer 9"],
-             ["question 10", "answer 10"]]
+QUESTIONS = [["Question 1:", "Tahi"],
+             ["Question 2:", "Rua"],
+             ["Question 3:", "Toru"],
+             ["Question 4:", "Wha"],
+             ["Question 5:", "Rima"],
+             ["Question 6:", "Ono"],
+             ["Question 7:", "Whitu"],
+             ["Question 8:", "Waru"],
+             ["Question 9:", "Iwa"],
+             ["Question 10:", "Tekau"]]
+# Functions Go here
 
-
+# Yes_No checkerFunction
 def yes_no(question_text):
     while True:
 
@@ -36,6 +37,7 @@ def yes_no(question_text):
             print("error, please answer 'yes' or 'no'")
 
 
+# Instructions Function
 def instructions():
     print("*** How Quiz Works ***")
     print()
@@ -43,10 +45,18 @@ def instructions():
     print("Program continues")
     print()
 
-
+# Question Function
 def question(questions, score):
     while len(questions) != 0:
+
+        # Getting Random Question
         question_number = random.randrange(len(questions))
+
+        # Getting Correct Answer
         answer = questions[question_number][1]
+
+        # Displaying Answer
         user_answer = input(f"{questions[question_number][0]} ")
         del questions[question_number]
+
+
