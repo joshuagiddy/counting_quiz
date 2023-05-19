@@ -72,7 +72,7 @@ def end_quiz(score):
     print(f"You got {score}/10 questions correct")
 
     # Asking if they want to play again
-    play_again = yes_no("Would you like to play again? (Y/N) ")
+    play_again = yes_no("Would you like to play again? (Yes/No) ")
 
     # If user says yes, restart program
     if play_again == "yes":
