@@ -3,16 +3,7 @@
 
 import random
 
-QUESTIONS = [["Question 1 = What is number 1:", "Tahi"],
-             ["Question 2 = What is number 2:", "Rua"],
-             ["Question 3 = What is number 3:", "Toru"],
-             ["Question 4 = What is number 4:", "Wha"],
-             ["Question 5 = What is number 5:", "Rima"],
-             ["Question 6 = What is number 6:", "Ono"],
-             ["Question 7 = What is number 7:", "Whitu"],
-             ["Question 8 = What is number 8:", "Waru"],
-             ["Question 9 = What is number 9:", "Iwa"],
-             ["Question 10 = What is number 10:", "Tekau"]]
+
 # Functions go here
 # Yes no checker function
 def yes_no(question_text):
@@ -52,7 +43,18 @@ def instructions():
     print()
 
 # Questions Function
-def question(questions, score):
+def question(score):
+    questions = [["Question 1 = What is number 1:", "Tahi"],
+                 ["Question 2 = What is number 2:", "Rua"],
+                 ["Question 3 = What is number 3:", "Toru"],
+                 ["Question 4 = What is number 4:", "Wha"],
+                 ["Question 5 = What is number 5:", "Rima"],
+                 ["Question 6 = What is number 6:", "Ono"],
+                 ["Question 7 = What is number 7:", "Whitu"],
+                 ["Question 8 = What is number 8:", "Waru"],
+                 ["Question 9 = What is number 9:", "Iwa"],
+                 ["Question 10 = What is number 10:", "Tekau"]]
+
     while len(questions) != 0:
         # Picking Random Number from selection
         question_number = random.randrange(len(questions))
@@ -75,26 +77,6 @@ def question(questions, score):
     end_quiz(score)
 
 
-# end quiz function
-def end_quiz(score):
-
-    # Telling user the score
-    print(f"You got {score}/10 questions correct")
-
-    # Asking if they want to play again
-    play_again = yes_no("Would you like to play again? (Yes/No) ")
-
-    # If user says yes, restart program
-    if play_again == "yes":
-        question(QUESTIONS, 0)
-
-    # If no then sends thank you message
-    elif play_again == "no":
-        print(formatter("!", "Thanks for playing"))
-    else:
-        print(formatter("#", "Invalid Input"))
-
-
 # Formatter function
 def formatter(symbol, text):
     # Getting width of sides
@@ -105,15 +87,33 @@ def formatter(symbol, text):
     top_bottom = symbol * len(formatted_text)
     return f"{top_bottom}\n{formatted_text}\n{top_bottom}"
 
+# end quiz function
+def end_quiz(score):
+
+    # Telling user the score
+    print(f"You got {score}/10 questions correct")
+
+    # Asking if they want to play again
+    play_again = yes_no("Would you like to try again? (yes/no) ")
+
+    # If user says yes, restart program
+    if play_again == "yes":
+        question(0)
+    # If no then sends thank you message
+    elif play_again == "no":
+        print(formatter("!", "Thanks for trying the Māori Counting Quiz"))
+    else:
+        print(formatter("#", "Invalid Input"))
+
 
 # Main routine
-welcome_message = print(formatter("*", "Welcome to my Maori Quiz"))
+welcome_message = print(formatter("*", "Welcome to my Māori Quiz"))
 played_before = yes_no("Have you done this quiz before? ")
 
 if played_before == "no":
     instructions()
-    question(QUESTIONS, 0)
+    question( 0)
 else:
-    question(QUESTIONS, 0)
+    question( 0)
 
 

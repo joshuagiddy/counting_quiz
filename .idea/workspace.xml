@@ -32,7 +32,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/giddy/OneDrive - Middleton Grange School/2023/11DTC/AS1.7 Programming/Exercises/counting_quiz&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/giddy/OneDrive - Middleton Grange School/2023/11DTC/AS1.7 Programming/Assessment/Counting Quiz/counting_quiz&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
@@ -41,8 +41,8 @@
       <recent name="C:\Users\giddy\OneDrive - Middleton Grange School\2023\11DTC\AS1.7 Programming\Exercises\counting_quiz" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.01_LU_base_v1">
-    <configuration name="01_LU_base_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.01_CQ_base_V1">
+    <configuration name="01_CQ_base_V1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="counting_quiz" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,7 +54,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_LU_base_v1.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\giddy\OneDrive - Middleton Grange School\2023\11DTC\AS1.7 Programming\Assessment\Counting Quiz\counting_quiz\01_CQ_base_V1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,10 +149,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.01_LU_base_v1" />
+        <item itemvalue="Python.01_CQ_base_V1" />
+        <item itemvalue="Python.04_End_Quiz_v2" />
         <item itemvalue="Python.05_Formatter_v1" />
         <item itemvalue="Python.Test" />
-        <item itemvalue="Python.04_End_Quiz_v2" />
         <item itemvalue="Python.03_Maori_Questions_v2" />
       </list>
     </recent_temporary>
@@ -181,8 +181,8 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/01_LU_base_v1.py</url>
-          <line>98</line>
+          <url>file://$PROJECT_DIR$/01_CQ_base_V1.py</url>
+          <line>78</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
